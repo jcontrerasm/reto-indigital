@@ -1,0 +1,26 @@
+<h2 class="b-section-title">Creación de clientes</h2>
+<section class="b-form-container">
+  <form [formGroup]="registerFormGroup" (submit)="registerSubmit(registerFormGroup)">
+    <div class="form-group">
+      <label for="firstName">Nombre:</label>
+      <input type="email" class="form-control" id="firstName" formControlName="firstName">
+      <small *ngIf="false" class="form-text text-muted">El campo es invalido.</small>
+    </div>
+    <div class="form-group">
+      <label for="surname">Apellido:</label>
+      <input type="text" class="form-control" id="surname" formControlName="surname">
+      <small *ngIf="false" class="form-text text-muted">El campo es invalido</small>
+    </div>
+    <div class="form-group">
+      <label for="age">Edad:</label>
+      <input type="text" class="form-control" id="age" formControlName="age">
+      <small *ngIf="false" class="form-text text-muted">El campo es invalido</small>
+    </div>
+    <div class="form-group">
+      <label for="birthdate">Fecha de nacimiento:</label>
+      <input type="text" class="form-control" id="birthdate" formControlName="birthdate">
+      <small *ngIf="false" class="form-text text-muted">El campo es invalido</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+  </form>
+</section>
