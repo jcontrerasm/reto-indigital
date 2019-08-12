@@ -10,5 +10,8 @@
 ## Ejecución del proyecto
 - Ejecutar desde la raiz el comando **`yarn start`** o **`npm start`**
 
-## Aplicación
+## Aplicación en local
 **Local URL:** http://localhost:4200
+
+## Aplicación en producción
+**URL:** https://reto-indigital.firebaseapp.com
