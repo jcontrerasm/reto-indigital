@@ -33,11 +33,8 @@ export class RegisterFormComponent implements OnInit {
   public registerSubmit(registerFormGroup: FormGroup) {
     if (registerFormGroup.valid) {
       this.setClient(registerFormGroup);
-      this._clienteService.registerClient(this.client).subscribe(
-        response => console.log(response),
-        errors => console.log(errors)
-      );
-      this._router.navigate(['/client/list']);
+      this._clienteService.registerClient(this.client).subscribe();
+      this._router.navigate(['/client/client-list']);
     }
   }
 

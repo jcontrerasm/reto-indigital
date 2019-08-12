@@ -23,8 +23,7 @@ export class DetailComponent implements OnInit {
   ngOnInit() {
     this.clientId = this._route.snapshot.paramMap.get('id');
     this._clienteService.getClient(this.clientId).subscribe(
-      response => this.client = response,
-      errors => console.log(errors)
+      response => this.client = response
     );
   }
 
