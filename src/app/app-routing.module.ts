@@ -5,11 +5,7 @@ const appRoutes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/register'
-  },
-  {
-    path: '**',
-    redirectTo: '/register'
+    redirectTo: '/client/register'
   }
 ];
 

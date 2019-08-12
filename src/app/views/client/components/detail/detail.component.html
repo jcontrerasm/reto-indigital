@@ -1,0 +1,23 @@
+<h2 class="b-section-title">Detalle de cliente</h2>
+<div class="b-container-button">
+  <button type="submit" class="btn btn-danger" [routerLink]="['/client/list']">Regresar</button>
+</div>
+<section class="b-detail-container">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span>Nombre: {{client.firstName}}</span>
+    </li>
+    <li class="list-group-item">
+      <span>Apellido: {{client.surname}}</span>
+    </li>
+    <li class="list-group-item">
+      <span>Edad: {{client.age}}</span>
+    </li>
+    <li class="list-group-item">
+      <span>Fecha de nacimiento: {{client.birthdate}}</span>
+    </li>
+    <li class="list-group-item">
+      <span>Fecha probable de muerte: 05-05-2060</span>
+    </li>
+  </ul>
+</section>

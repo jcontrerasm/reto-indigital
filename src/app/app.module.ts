@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
-import { ClientRegisterModule } from './views/client-register/client-register.module';
+import { ClientModule } from './views/client/client.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    ClientRegisterModule
+    ClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from 'src/app/core/components/layout/layout.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { ListComponent } from './components/list/list.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 const clientRegisterRoutes: Routes = [
   {
-    path: 'register',
+    path: 'client',
     component: LayoutComponent,
     children: [
-      { path: '', component: RegisterFormComponent, pathMatch: 'full' }
+      { path: 'register/:id', component: DetailComponent },
+      { path: 'register', component: RegisterFormComponent },
+      { path: 'list', component: ListComponent },
     ]
   }
 ];
@@ -17,4 +21,4 @@ const clientRegisterRoutes: Routes = [
   imports: [RouterModule.forChild(clientRegisterRoutes)],
   exports: [RouterModule]
 })
-export class ClientRegisterRoutingModule { }
+export class ClientRoutingModule { }

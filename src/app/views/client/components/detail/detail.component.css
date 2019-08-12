@@ -1,0 +1,12 @@
+.b-section-title {
+  margin: 10px 0;
+}
+
+.b-detail-container {
+  margin: 20px 0;
+}
+
+.b-container-button {
+  display: flex;
+  justify-content: flex-end;
+}
